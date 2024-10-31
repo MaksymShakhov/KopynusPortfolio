@@ -203,6 +203,21 @@ nav ul li a:hover::after{
     margin-top: 50px;
 }
 
+.work-list3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+    margin-top: 50px;
+}
+
+.work-list3 iframe{
+    height: 300px;
+    width: 320px;
+}
+
+.work-list3 h3{
+    text-align: center;
+}
 .title
 {
     font-size: 40px;
@@ -333,82 +348,82 @@ nav ul li a:hover::after{
 }
 
 footer{
-	background-color: #101010;
-	font-family: Arial, Helvetica, sans-serif;
+ background-color: #101010;
+ font-family: Arial, Helvetica, sans-serif;
 }
 
 .footerContainer
 {
-	width: 100%;
-	padding: 10px,0px,10px;
+ width: 100%;
+ padding: 10px,0px,10px;
 }
 
 footer a{
-	text-decoration: none;
-	background-size: 5em;
-	background-position: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 5em;
-	border: rgb(255 255 255 / .4) 2px solid;
-	margin-top: calc(var(--index) * 10);
-	outline: none;
+ text-decoration: none;
+ background-size: 5em;
+ background-position: center;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 5em;
+ border: rgb(255 255 255 / .4) 2px solid;
+ margin-top: calc(var(--index) * 10);
+ outline: none;
 }
 
 .socialIcons{
-	display: flex;
-	justify-content:center;
+ display: flex;
+ justify-content:center;
 }
 
 .socialIcons a{
-	text-decoration: none;
-	padding: 10px;
-	background-color: white;
-	margin: 10px;
-	border-radius: 50%;
-	width: 65px;
-	height: 65px;
+ text-decoration: none;
+ padding: 10px;
+ background-color: white;
+ margin: 10px;
+ border-radius: 50%;
+ width: 65px;
+ height: 65px;
 }
 
 .socialIcons a i{
-	font-size: 2em;
-	color: black;
-	opacity: 0.9;
+ font-size: 2em;
+ color: black;
+ opacity: 0.9;
 }
 .socialIcons a:hover{
-	background-color: #111;
-	transition: 0.5s;
+ background-color: #111;
+ transition: 0.5s;
 }
 
 .socialIcons a:hover i{
-	color: white;
-	transition: 0.5s;
+ color: white;
+ transition: 0.5s;
 }
 
 .footerNav{
-	margin: 1px 0;
+ margin: 1px 0;
 }
 
 .footerNav ul{
-	display: flex;
-	justify-content: center;
+ display: flex;
+ justify-content: center;
 }
 
 .footerNav ul li a{
-	color: white;
-	margin: 20px;
-	text-decoration: none;
-	font-size: 1.3em;
-	opacity: 0.7;
-	transition: 0.5s;
-	border-radius: 0em;
-	outline: none;
-	border: rgba(27, 27, 27, 0) 0px solid;
+ color: white;
+ margin: 20px;
+ text-decoration: none;
+ font-size: 1.3em;
+ opacity: 0.7;
+ transition: 0.5s;
+ border-radius: 0em;
+ outline: none;
+ border: rgba(27, 27, 27, 0) 0px solid;
 }
 
 .footerNav ul li a:hover{
-	opacity: 1;
+ opacity: 1;
 }
 
 .footerBottom{
@@ -426,7 +441,7 @@ color: white;
 }
 
 .designer{
-	font-weight: 700;
+ font-weight: 700;
 }
 
 nav .fa{
@@ -442,8 +457,10 @@ html{
     .work-list2{
         grid-template-columns: 1fr;
     }
+    .work-list3{
+        grid-template-columns: 1fr;
+    }
 }
-
 @media only screen and (max-width:700px){
     #header{
         background-image:url(https://i.ibb.co/JB9VJ43/backgroundsmall.png);
