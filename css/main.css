@@ -450,6 +450,26 @@ nav .fa{
 html{
     scroll-behavior: smooth;
 }
+#chat-section {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .chat-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  df-messenger {
+    --df-messenger-bot-message: #ffcc00;
+    --df-messenger-user-message: #e0b300;
+    --df-messenger-font-color: #000000;
+    --df-messenger-chat-background-color: #262626;
+    --df-messenger-titlebar-background: #ffcc00 !important;
+    --df-messenger-send-icon: #ffcc00;
+    --df-messenger-button-titlebar-color: #f3c200 !important;
+    --df-messenger-minimized-icon-color: #ffcc00 !important;
+  }
 @media only screen and (max-width:1000px){
     .work-list1{
         grid-template-columns: 1fr;
@@ -521,5 +541,8 @@ html{
         font-size: 16px;
         margin-right: 20px;
     }
-
+    .chat-wrapper {
+        max-width: 100%;
+        padding: 0 10px;
+    }
 }

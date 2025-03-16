@@ -280,31 +280,40 @@
         </div>
     </div>
 </footer>
+
 <script>
     var tablinks = document.getElementsByClassName("tab-links");
-
-    var tabcontents = document.getElementsByClassName("tab-contents");function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
-
-    <script>
-        var sidemenu = document.getElementById("sidemenu");
-        function openmenu(){
-            sidemenu.style.right = "0";
-        }
-        function closemenu(){
-            sidemenu.style.right = "-200px";
-        }
-    </script>
-        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
-    </script>
-</body>
-</html>
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger
+    chat-icon="https:&#x2F;&#x2F;i.ibb.co&#x2F;1fzrHTTP&#x2F;Vector-1.png"
+    intent="WELCOME"
+    chat-title="PortfolioFAQ"
+    agent-id="b756be44-a971-4c19-9d94-8a5da8225ba6"
+    language-code="en"
+  ></df-messenger>
+  
+  </body>
+  </html>
