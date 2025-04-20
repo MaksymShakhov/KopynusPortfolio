@@ -205,14 +205,14 @@ nav ul li a:hover::after{
 
 .work-list3{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 25px;
     margin-top: 50px;
 }
 
 .work-list3 iframe{
     height: 300px;
-    width: 320px;
+    width: 250px;
 }
 
 .work-list3 h3{
