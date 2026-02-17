@@ -27,7 +27,6 @@
             </div>
         </div>
     </div>
-
     <div class="mobile-menu-container" id="mobileMenu">
         <div class="mobile-menu-close" onclick="closeMobileMenu()">
             <i class="fa fa-times"></i>
@@ -41,88 +40,128 @@
             </ul>
         </div>
     </div>
-
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <video controls src="images/Games.mp4" width="500"></video>
+                    <video controls src="images/Games.mp4"></video>
                 </div>
                 <div class="about-col-2">
                     <h1 class="subtitle">About Me</h1>
-                    <p style="max-width: 600px;">Hello! As you know, my name is Maksym and I chose programming. I am an outgoing and hardworking person, always want to learn something new and keep up with trends. In addition to Gamedev, I have created several applications in Flutter/Python and websites in HTML/CSS/JavaScript. My experience is more than 5 years and every day it becomes bigger. So this page shows what I have done so far.</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Game Developer</span><br>Unity / Unreal Engine</li>
-                            <li><span>Python Developer</span><br>Telegram Bot / Parser / Text Analyzer</li>
-                            <li><span>Web Developer</span><br>HTML / CSS / JavaScript</li>
-                            <li><span>3D Modeller</span><br>Blender / 3DsMax / MagicaVoxel</li>
-                            <li><span>Video Editor</span><br>Final Cut / Adobe Premier / Sony Vegas</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Working with Unity within 4 years</span><br>OOP / Solid / Design Patterns / URP / HDRP and more</li>
-                            <li><span>Working with Unreal Engine in multiple projects</span><br>Blueprints / Packaging / Components / AI and more</li>
-                            <li><span>Working with Python in several projects</span><br>Turtle / NumPy / BeautifulSoup / TensorFlow / Requests and more</li>
-                            <li><span>Working with Flutter / Dart in a big delivery app project</span><br>Firebase / Stripe and more</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>IT courses "ITStep" (2018-2022)</span><br>Unity / UE / C# / Python / Blender / 3DsMax / Photoshop and more</li>
-                            <li><span>Unity courses from the Minor Academy of Sciences (2020-2021)</span><br>Unity / C# and more</li>
-                            <li><span>Technical University of Košice (2024-now)</span><br>C / AI and more</li>
-                            <li><span>Python course from VITA.SK (2025)</span><br>Python, OOP, SOLID</li>                    
-                        </ul>
-                    </div>
+                    <p style="max-width: 600px;">
+                        I'm Maksym, a developer with 5+ years of experience in game, app, and AI development. 
+                        Recently focused on Flutter freelance projects — a large delivery/social app (594 hrs) 
+                        and a Kotlin-to-Flutter NFC conversion. Currently studying at Technical University of Košice 
+                        (C, AI) and continuously expanding my skills in Unity, Unreal, and Python.
+                    </p>
+                </div>
+            </div>
+            <div class="about-tabs-container">
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul class="skills-grid">
+                        <li><span>Game Developer</span>Unity / Unreal Engine</li>
+                        <li><span>Python Developer</span>Telegram Bot / Parser / Text Analyzer</li>
+                        <li><span>Web Developer</span>HTML / CSS / JavaScript</li>
+                        <li><span>3D Modeller</span>Blender / 3DsMax / MagicaVoxel</li>
+                        <li><span>Video Editor</span>Final Cut / Adobe Premier / Sony Vegas</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul class="experience-grid">
+                        <li><span>Unity (5 years)</span>OOP / Solid / Design Patterns / URP / HDRP and more</li>
+                        <li><span>Unreal Engine</span>Blueprints / Packaging / Components / AI and more</li>
+                        <li><span>Python</span>Turtle / NumPy / BeautifulSoup / TensorFlow / Requests</li>
+                        <li><span>Flutter / Dart</span>Firebase / Stripe / large delivery app</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul class="education-grid">
+                        <li><span>ITStep (2018-2022)</span>Unity / UE / C# / Python / Blender / 3DsMax / Photoshop</li>
+                        <li><span>Minor Academy of Sciences (2020-2021)</span>Unity / C#</li>
+                        <li><span>Technical University of Košice (2024-now)</span>C / AI</li>
+                        <li><span>Python course VITA.SK (2025)</span>Python, OOP, SOLID</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-
     <div id="services">
         <div class="container">
             <h1 class="section-title">My Services</h1>
             <div class="services-list">
-                <div class="service-item">
+                <div class="service-item" id="unity-service">
                     <i class="fas fa-gamepad"></i>
                     <h2>Unity / UE Games</h2>
                     <p>Made multiple projects in genres (Shooter, Platformer, Runner, Horror and more. Released games on Windows, MacOS, Android, WebGL)</p>
                     <a href="https://drive.google.com/drive/u/0/folders/1fC3zSf3defBYZkpnSIuT5VXktsw1IEOM">Learn More</a>
                 </div>
-                <div class="service-item">
+                <div class="service-item" id="models-service">
                     <i class="fas fa-cube"></i>
                     <h2>3D Models</h2>
                     <p>Made models for my games(Character, Cannon, Catapult, Glock, Game Props)</p>
                     <a href="https://sketchfab.com/beszbashen1u">Learn More</a>
                 </div>
-                <div class="service-item">
+                <div class="service-item" id="python-service">
                     <i class="fas fa-code"></i>
                     <h2>Python Apps</h2>
                     <p>Made multiple projects(Telegram Bot, Parser, Text Analyzer)</p>
                     <a href="https://drive.google.com/drive/folders/1QPh7VJDoDGhIgEklT5v7joaJpI0CH82i?usp=drive_link">Learn More</a>
                 </div>
             </div>
-        </div> 
+        </div>
     </div>
-
+    <div id="freelance">
+        <div class="container">
+            <h1 class="section-title">Freelance Experience</h1>
+            <div class="freelance-list">
+                <div class="freelance-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h2>Flutter Developer – Delivery & Social Network App</h2>
+                    <p class="date">Jun 12, 2025 - Sep 30, 2025 (594 hrs)</p>
+                    <p><strong>Description:</strong> Worked on a large-scale delivery & social networking application built from scratch. Integrated with dynamic website, ensured constant synchronization.</p>
+                    <p><strong>Key achievements:</strong></p>
+                    <ul>
+                        <li>User authentication & registration</li>
+                        <li>Real-time chat functionality</li>
+                        <li>Interactive quiz system</li>
+                        <li>Firebase push notifications with custom logic</li>
+                        <li>User customization features</li>
+                        <li>Supabase backend integration</li>
+                        <li>Adaptation to ongoing website updates</li>
+                        <li>UI/UX optimization</li>
+                    </ul>
+                </div>
+                <div class="freelance-item">
+                    <i class="fas fa-code-branch"></i>
+                    <h2>Kotlin to Flutter NFC Reader Conversion</h2>
+                    <p class="date">Dec 15, 2025 - Dec 21, 2025 (40 hrs)</p>
+                    <p><strong>Description:</strong> Converted NFC reader app from Kotlin to Flutter, ensuring full functional parity and cross-platform compatibility.</p>
+                    <p><strong>Key achievements:</strong></p>
+                    <ul>
+                        <li>Recreated NFC reading logic in Flutter</li>
+                        <li>Full functional parity with original Kotlin version</li>
+                        <li>Designed a modern UI</li>
+                        <li>Added extra features beyond original</li>
+                        <li>Delivered within tight deadline</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="portfolio">
         <div class="container">
             <h1 class="section-title">Portfolio</h1>
-            
             <div class="portfolio-tabs">
                 <div class="portfolio-tab-titles">
                     <p class="portfolio-tab-link active-portfolio-tab" onclick="openPortfolioTab('games')">Games</p>
                     <p class="portfolio-tab-link" onclick="openPortfolioTab('models')">3D Models</p>
                     <p class="portfolio-tab-link" onclick="openPortfolioTab('certificates')">Certificates</p>
                 </div>
-                
                 <div class="portfolio-tab-content active-portfolio-tab" id="games">
                     <h2 class="kindtitle">Games</h2>
                     <div class="work-list1">
@@ -138,7 +177,7 @@
                             <img src="images/Just Fun.jpg">
                             <div class="layer">
                                 <h3>Just Fun</h3>
-                                <p>Just Fun is a multiplayer runner with colored men that you can play with friends on computers.The main goal of the game is to reach the finish line before others, but it`s not so easy - there are many obstacles in the game.</p>
+                                <p>Just Fun is a multiplayer runner with colored men that you can play with friends on computers.The main goal of the game is to reach the finish line before others, but its not so easy - there are many obstacles in the game.</p>
                                 <a href="https://kopynus.itch.io/just-fun"><i class="fa fa-external-link" aria-hidden="true"></i></a>
                             </div>
                         </div>
@@ -163,7 +202,7 @@
                             <div class="layer">
                                 <h3>Going Guys</h3>
                                 <p>Collect as many dollars as possible! In this game you need to run to absorb dollars, increasing in size in order to hit the button at the finish line and earn even more dollars!</p>
-                                <a href="https://play.google.com/store/apps/details?id=com.Kopynus.RunningGuys"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                                <a href="https://drive.google.com/file/d/18A89XV-YOmVZ0Bn_dSBgBoWiV1L_ImqW/view?usp=drive_link"><i class="fa fa-external-link" aria-hidden="true"></i></a>
                             </div>
                         </div>
                         <div class="work">
@@ -200,7 +239,6 @@
                         </div>
                     </div>
                 </div>
-                
                 <div class="portfolio-tab-content" id="models">
                     <h2 class="kindtitle">3D Models</h2>
                     <div class="work-list2">
@@ -254,7 +292,6 @@
                         </div>
                     </div>
                 </div>
-                
                 <div class="portfolio-tab-content" id="certificates">
                     <h2 class="kindtitle">Certificates</h2>
                     <div class="work-list3">
@@ -279,7 +316,6 @@
             </div>
         </div>
     </div>
-
     <footer id="footer">
         <div class="container">
             <div class="footer-content">
@@ -294,7 +330,6 @@
                         <a href="https://www.instagram.com/maksym_shakhov/"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
-                
                 <div class="footer-section">
                     <h3>Quick Links</h3>
                     <ul class="footer-links">
@@ -304,33 +339,24 @@
                         <li><a href="#portfolio">Portfolio</a></li>
                     </ul>
                 </div>
-                
                 <div class="footer-section">
                     <h3>Skills</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Unity Development</a></li>
-                        <li><a href="#">Unreal Engine</a></li>
-                        <li><a href="#">Python Programming</a></li>
-                        <li><a href="#">3D Modeling</a></li>
+                        <li><a href="#unity-service">Unity Development</a></li>
+                        <li><a href="#unity-service">Unreal Engine</a></li>
+                        <li><a href="#python-service">Python Programming</a></li>
+                        <li><a href="#models-service">3D Modeling</a></li>
                     </ul>
                 </div>
             </div>
-            
             <div class="footer-bottom">
-                <p>Copyright &copy; 2025 | Designed by <span class="designer">Kopynus</span></p>
+                <p>Copyright &copy; 2026 | Designed by <span class="designer">Kopynus</span></p>
             </div>
         </div>
     </footer>
-
-    <script src="js/script.js"></script>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-    <df-messenger
-        chat-icon="https:&#x2F;&#x2F;i.ibb.co&#x2F;1fzrHTTP&#x2F;Vector-1.png"
-        intent="WELCOME"
-        chat-title="PortfolioFAQ"
-        agent-id="b756be44-a971-4c19-9d94-8a5da8225ba6"
-        language-code="en"
-    ></df-messenger>
+    <df-messenger chat-icon="https:&#x2F;&#x2F;i.ibb.co&#x2F;1fzrHTTP&#x2F;Vector-1.png" intent="WELCOME" chat-title="PortfolioFAQ" agent-id="b756be44-a971-4c19-9d94-8a5da8225ba6" language-code="en"></df-messenger>
+    <script src="js/script.js"></script>
 </body>
 </html>
