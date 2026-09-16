@@ -1,362 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kopynus Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maksym Shakhov — Flutter / Unity / AI Developer</title>
+<meta name="description" content="Maksym Shakhov — Flutter, Unity and AI developer based in Košice, Slovakia. Freelance mobile apps, released games, 3D models.">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/KopynusLogo.png" class="logo">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#footer">Social Links</a></li>
-                </ul>
-                <i class="fa fa-bars menu-toggle" style="color: white" onclick="openMobileMenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Game / App / AI Developer</p>
-                <h1>Hi, I'm <span>Maksym</span><br>Born in Ukraine</h1>
-            </div>
-        </div>
-    </div>
-    <div class="mobile-menu-container" id="mobileMenu">
-        <div class="mobile-menu-close" onclick="closeMobileMenu()">
-            <i class="fa fa-times"></i>
-        </div>
-        <div class="mobile-menu">
+
+<div class="nav-sticky" id="stickyNav">
+    <div class="container">
+        <nav>
+            <img src="images/KopynusLogo.png" class="logo" alt="Kopynus">
             <ul>
-                <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
-                <li><a href="#services" onclick="closeMobileMenu()">Services</a></li>
-                <li><a href="#portfolio" onclick="closeMobileMenu()">Portfolio</a></li>
-                <li><a href="#footer" onclick="closeMobileMenu()">Social Links</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#flutter">Flutter</a></li>
+                <li><a href="#unity">Unity</a></li>
+                <li><a href="#python">Python &amp; AI</a></li>
+                <li><a href="#models">3D Models</a></li>
+                <li><a href="#footer">Contact</a></li>
             </ul>
-        </div>
+            <i class="fa fa-bars menu-toggle" onclick="openMobileMenu()"></i>
+        </nav>
     </div>
-    <div id="about">
+</div>
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/KopynusLogo.png" class="logo" alt="Kopynus">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#flutter">Flutter</a></li>
+                <li><a href="#unity">Unity</a></li>
+                <li><a href="#python">Python &amp; AI</a></li>
+                <li><a href="#models">3D Models</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+            <i class="fa fa-bars menu-toggle" onclick="openMobileMenu()"></i>
+        </nav>
+    </div>
+    <div class="header-body">
         <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <video controls src="images/Games.mp4"></video>
+            <div class="header-text">
+                <p>Flutter / Unity / AI Developer</p>
+                <h1>Hi, I'm <span>Maksym</span><br>Born in Ukraine</h1>
+                <p class="header-tagline">I build cross-platform mobile apps in Flutter, games in Unity, and I'm studying artificial intelligence at the Technical University of Košice.</p>
+                <div class="header-stats">
+                    <div><strong>634 h</strong><span>delivered on Upwork</span></div>
+                    <div><strong>7+ years</strong><span>with Unity since 2019</span></div>
+                    <div><strong>10+ games</strong><span>made across different genres</span></div>
                 </div>
-                <div class="about-col-2">
-                    <h1 class="subtitle">About Me</h1>
-                    <p style="max-width: 600px;">
-                        I'm Maksym, a developer with 5+ years of experience in game, app, and AI development. 
-                        Recently focused on Flutter freelance projects — a large delivery/social app (594 hrs) 
-                        and a Kotlin-to-Flutter NFC conversion. Currently studying at Technical University of Košice 
-                        (C, AI) and continuously expanding my skills in Unity, Unreal, and Python.
-                    </p>
-                </div>
-            </div>
-            <div class="about-tabs-container">
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul class="skills-grid">
-                        <li><span>Game Developer</span>Unity / Unreal Engine</li>
-                        <li><span>Python Developer</span>Telegram Bot / Parser / Text Analyzer</li>
-                        <li><span>Web Developer</span>HTML / CSS / JavaScript</li>
-                        <li><span>3D Modeller</span>Blender / 3DsMax / MagicaVoxel</li>
-                        <li><span>Video Editor</span>Final Cut / Adobe Premier / Sony Vegas</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="experience">
-                    <ul class="experience-grid">
-                        <li><span>Unity (5 years)</span>OOP / Solid / Design Patterns / URP / HDRP and more</li>
-                        <li><span>Unreal Engine</span>Blueprints / Packaging / Components / AI and more</li>
-                        <li><span>Python</span>Turtle / NumPy / BeautifulSoup / TensorFlow / Requests</li>
-                        <li><span>Flutter / Dart</span>Firebase / Stripe / large delivery app</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul class="education-grid">
-                        <li><span>ITStep (2018-2022)</span>Unity / UE / C# / Python / Blender / 3DsMax / Photoshop</li>
-                        <li><span>Minor Academy of Sciences (2020-2021)</span>Unity / C#</li>
-                        <li><span>Technical University of Košice (2024-now)</span>C / AI</li>
-                        <li><span>Python course VITA.SK (2025)</span>Python, OOP, SOLID</li>
-                    </ul>
+                <div class="header-cta">
+                    <a class="btn btn-primary" href="#flutter">See my work</a>
+                    <a class="btn btn-outline" href="#footer">Contact me</a>
                 </div>
             </div>
         </div>
     </div>
-    <div id="services">
-        <div class="container">
-            <h1 class="section-title">My Services</h1>
-            <div class="services-list">
-                <div class="service-item" id="unity-service">
-                    <i class="fas fa-gamepad"></i>
-                    <h2>Unity / UE Games</h2>
-                    <p>Made multiple projects in genres (Shooter, Platformer, Runner, Horror and more. Released games on Windows, MacOS, Android, WebGL)</p>
-                    <a href="https://drive.google.com/drive/u/0/folders/1fC3zSf3defBYZkpnSIuT5VXktsw1IEOM">Learn More</a>
-                </div>
-                <div class="service-item" id="models-service">
-                    <i class="fas fa-cube"></i>
-                    <h2>3D Models</h2>
-                    <p>Made models for my games(Character, Cannon, Catapult, Glock, Game Props)</p>
-                    <a href="https://sketchfab.com/beszbashen1u">Learn More</a>
-                </div>
-                <div class="service-item" id="python-service">
-                    <i class="fas fa-code"></i>
-                    <h2>Python Apps</h2>
-                    <p>Made multiple projects(Telegram Bot, Parser, Text Analyzer)</p>
-                    <a href="https://drive.google.com/drive/folders/1QPh7VJDoDGhIgEklT5v7joaJpI0CH82i?usp=drive_link">Learn More</a>
-                </div>
+</div>
+
+<div class="mobile-menu-container" id="mobileMenu">
+    <div class="mobile-menu-close" onclick="closeMobileMenu()"><i class="fa fa-times"></i></div>
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+            <li><a href="#flutter" onclick="closeMobileMenu()">Flutter</a></li>
+            <li><a href="#unity" onclick="closeMobileMenu()">Unity</a></li>
+            <li><a href="#python" onclick="closeMobileMenu()">Python &amp; AI</a></li>
+            <li><a href="#models" onclick="closeMobileMenu()">3D Models</a></li>
+            <li><a href="#certificates" onclick="closeMobileMenu()">Certificates</a></li>
+            <li><a href="#footer" onclick="closeMobileMenu()">Contact</a></li>
+        </ul>
+    </div>
+</div>
+
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <video controls preload="metadata" poster="images/crashOut.jpg" src="images/Games.mp4"></video>
+            </div>
+            <div class="about-col-2">
+                <h2 class="subtitle">About Me</h2>
+                <p>I'm Maksym, a software and game developer with 7+ years of hands-on Unity experience since 2019, and production Flutter work delivered for real clients on Upwork.</p>
+                <p>My freelance work is Flutter-focused: a large delivery and social network app built from scratch, and an NFC application rebuilt from Kotlin. In parallel I've made 10+ games in Unity across Android, Windows, macOS and WebGL</p>
+                <p>I'm currently studying Artificial Intelligence at the Technical University of Košice, which is steadily becoming the third direction of my work alongside mobile and games.</p>
+            </div>
+        </div>
+
+        <div class="about-tabs-container">
+            <div class="tab-titles">
+                <button class="tab-links active-link" onclick="opentab('skills', this)">Skills</button>
+                <button class="tab-links" onclick="opentab('experience', this)">Experience</button>
+                <button class="tab-links" onclick="opentab('education', this)">Education</button>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+                <ul class="skills-grid">
+                    <li><span>Mobile Developer</span>Flutter / Dart / Android / NFC APIs</li>
+                    <li><span>Game Developer</span>Unity (C#) / Unreal Engine</li>
+                    <li><span>Python &amp; AI</span>Python / NumPy / TensorFlow / ML fundamentals</li>
+                    <li><span>Backend &amp; Services</span>Supabase / Firebase / Stripe</li>
+                    <li><span>3D Modeller</span>Blender / 3ds Max / MagicaVoxel</li>
+                    <li><span>Principles &amp; Tools</span>OOP / SOLID / Clean Code / Git / GitHub</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+                <ul class="experience-grid">
+                    <li><span>Flutter / Dart (2023 – now)</span>Supabase / Firebase / Stripe / real-time chat / large delivery app</li>
+                    <li><span>Unity (7+ years)</span>OOP / SOLID / design patterns / Photon PUN / URP / HDRP</li>
+                    <li><span>Unreal Engine</span>Blueprints / packaging / components / AI</li>
+                    <li><span>Python</span>NumPy / TensorFlow / BeautifulSoup / Requests / Turtle</li>
+                    <li><span>Java</span>Basic level</li>
+                    <li><span>Global Game Jam 2023</span>Rapid prototyping in a team environment</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+                <ul class="education-grid">
+                    <li><span>Technical University of Košice (2024 – now)</span>Artificial Intelligence</li>
+                    <li><span>VITA.SK Python Course (2025)</span>Python / OOP / SOLID</li>
+                    <li><span>National Academy of Sciences (2021)</span>Technical program — Unity / C#</li>
+                    <li><span>ITSTEP Academy (2019 – 2022)</span>Unity / UE / C# / Python / Blender / 3ds Max / Photoshop</li>
+                </ul>
             </div>
         </div>
     </div>
-    <div id="freelance">
-        <div class="container">
-            <h1 class="section-title">Freelance Experience</h1>
-            <div class="freelance-list">
-                <div class="freelance-item">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h2>Flutter Developer – Delivery & Social Network App</h2>
-                    <p class="date">Jun 12, 2025 - Sep 30, 2025 (594 hrs)</p>
-                    <p><strong>Description:</strong> Worked on a large-scale delivery & social networking application built from scratch. Integrated with dynamic website, ensured constant synchronization.</p>
-                    <p><strong>Key achievements:</strong></p>
-                    <ul>
-                        <li>User authentication & registration</li>
-                        <li>Real-time chat functionality</li>
-                        <li>Interactive quiz system</li>
-                        <li>Firebase push notifications with custom logic</li>
-                        <li>User customization features</li>
-                        <li>Supabase backend integration</li>
-                        <li>Adaptation to ongoing website updates</li>
-                        <li>UI/UX optimization</li>
-                    </ul>
+</section>
+
+<section id="flutter">
+    <div class="container">
+        <h2 class="section-title">Flutter &amp; Mobile</h2>
+        <p class="section-intro">Freelance work on Upwork since 2023 — cross-platform applications built from scratch, with real backends, real deadlines and real clients.</p>
+
+        <div class="freelance-list">
+            <div class="freelance-item">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Social Network App</h3>
+                <p class="date">June – September 2025 &nbsp;|&nbsp; 594 hours</p>
+                <p>A large-scale social networking application built from scratch in Flutter, kept constantly in sync with a dynamic website that changed throughout the project.</p>
+                <ul>
+                    <li>User authentication and registration</li>
+                    <li>Real-time chat functionality</li>
+                    <li>Interactive quiz system</li>
+                    <li>Firebase push notifications with custom logic</li>
+                    <li>User customization features</li>
+                    <li>Supabase backend integration</li>
+                    <li>Adaptation to ongoing website updates</li>
+                    <li>UI/UX and performance optimization</li>
+                </ul>
+            </div>
+
+            <div class="freelance-item">
+                <i class="fas fa-code-branch"></i>
+                <h3>NFC Reader — Kotlin to Flutter</h3>
+                <p class="date">December 2025 &nbsp;|&nbsp; 40 hours</p>
+                <p>Converted an existing NFC reader application from Kotlin to Flutter with full functional parity, working directly against native Android NFC APIs.</p>
+                <ul>
+                    <li>Recreated NFC reading logic in Flutter</li>
+                    <li>Full functional parity with the original Kotlin version</li>
+                    <li>Designed a modern UI for the rebuild</li>
+                    <li>Added extra features beyond the original app</li>
+                    <li>Delivered within a tight one-week deadline</li>
+                </ul>
+            </div>
+        </div>
+
+        <ul class="tech-tags">
+            <li>Flutter</li><li>Dart</li><li>Android</li><li>Supabase</li><li>Firebase</li>
+            <li>Stripe</li><li>NFC APIs</li><li>Real-time chat</li><li>Push notifications</li><li>Git</li>
+        </ul>
+    </div>
+</section>
+
+<section id="unity">
+    <div class="container">
+        <h2 class="section-title">Unity &amp; Games</h2>
+        <p class="section-intro">Ten+ games made since 2019 — shooters, platformers, runners, horror and puzzle games. Some are released on Windows, macOS, Android and WebGL, others are shown in videos.</p>
+
+        <div class="work-list">
+            <a class="work" href="https://play.google.com/store/apps/details?id=com.Kopynus.CrashOut">
+                <img src="images/crashOut.jpg" alt="Crash Out" loading="lazy">
+                <div class="work-caption">Crash Out</div>
+                <div class="layer">
+                    <h3>Crash Out</h3>
+                    <p>Destroy the entire map in your car. Earn points across different game modes and unlock new cars and maps.</p>
+                    <span class="open"><i class="fa fa-external-link"></i></span>
                 </div>
-                <div class="freelance-item">
-                    <i class="fas fa-code-branch"></i>
-                    <h2>Kotlin to Flutter NFC Reader Conversion</h2>
-                    <p class="date">Dec 15, 2025 - Dec 21, 2025 (40 hrs)</p>
-                    <p><strong>Description:</strong> Converted NFC reader app from Kotlin to Flutter, ensuring full functional parity and cross-platform compatibility.</p>
-                    <p><strong>Key achievements:</strong></p>
-                    <ul>
-                        <li>Recreated NFC reading logic in Flutter</li>
-                        <li>Full functional parity with original Kotlin version</li>
-                        <li>Designed a modern UI</li>
-                        <li>Added extra features beyond original</li>
-                        <li>Delivered within tight deadline</li>
-                    </ul>
+            </a>
+            <a class="work" href="https://kopynus.itch.io/just-fun">
+                <img src="images/Just%20Fun.jpg" alt="Just Fun" loading="lazy">
+                <div class="work-caption">Just Fun</div>
+                <div class="layer">
+                    <h3>Just Fun</h3>
+                    <p>A multiplayer runner with colored men you can play with friends on PC. Reach the finish first — the obstacles make it hard.</p>
+                    <span class="open"><i class="fa fa-external-link"></i></span>
+                </div>
+            </a>
+            <a class="work" href="https://kopynus.itch.io/boat-defense">
+                <img src="images/BoatDefense.png" alt="Boat Defense" loading="lazy">
+                <div class="work-caption">Boat Defense</div>
+                <div class="layer">
+                    <h3>Boat Defense</h3>
+                    <p>Protect your boat at all costs using guns, catapults and turrets. No time to wait — start building.</p>
+                    <span class="open"><i class="fa fa-external-link"></i></span>
+                </div>
+            </a>
+            <a class="work" href="https://kopynus.itch.io/clever-soccer">
+                <img src="images/Soccer.jpeg" alt="Clever Soccer" loading="lazy">
+                <div class="work-caption">Clever Soccer</div>
+                <div class="layer">
+                    <h3>Clever Soccer</h3>
+                    <p>Play soccer against clever AI. Neural networks keep every match as unique as possible.</p>
+                    <span class="open"><i class="fa fa-external-link"></i></span>
+                </div>
+            </a>
+            <a class="work" href="https://drive.google.com/file/d/18A89XV-YOmVZ0Bn_dSBgBoWiV1L_ImqW/view?usp=drive_link">
+                <img src="images/RunningGuys.jpg" alt="Going Guys" loading="lazy">
+                <div class="work-caption">Going Guys</div>
+                <div class="layer">
+                    <h3>Going Guys</h3>
+                    <p>Collect as many dollars as possible — grow in size, hit the button at the finish line and earn even more.</p>
+                    <span class="open"><i class="fa fa-external-link"></i></span>
+                </div>
+            </a>
+            <a class="work" href="https://kopynus.itch.io/earthroots">
+                <img src="images/EarthRoots.jpeg" alt="Earth Roots" loading="lazy">
+                <div class="work-caption">Earth Roots</div>
+                <div class="layer">
+                    <h3>Earth Roots</h3>
+                    <p>A single-player adventure. Find out the secret of your family's roots across many locations and playable characters.</p>
+                    <span class="open"><i class="fa fa-external-link"></i></span>
+                </div>
+            </a>
+            <a class="work" href="https://kopynus.itch.io/ha-ha-show">
+                <img src="images/HaHa.jpg" alt="Ha-Ha Show" loading="lazy">
+                <div class="work-caption">Ha-Ha Show</div>
+                <div class="layer">
+                    <h3>Ha-Ha Show</h3>
+                    <p>Compete with another player, standing on colors and surviving as long as possible. Bring the audience as much laughter as you can.</p>
+                    <span class="open"><i class="fa fa-external-link"></i></span>
+                </div>
+            </a>
+            <a class="work" href="https://drive.google.com/file/d/19KyhHSD0FIx5zkhbstEwCQwlMhZHHSzM/view?usp=sharing">
+                <img src="images/Logo61.png" alt="61 Level" loading="lazy">
+                <div class="work-caption">61 Level</div>
+                <div class="layer">
+                    <h3>61 Level</h3>
+                    <p>A horror about one level of the backrooms — a mysterious train. Solve all the tasks as fast as you can.</p>
+                    <span class="open"><i class="fa fa-external-link"></i></span>
+                </div>
+            </a>
+            <a class="work" href="https://drive.google.com/file/d/1ualhqO59JvzRi0OEeqfYxkb1iIFCqyA3/view?usp=sharing">
+                <img src="images/Match%20Flowers.png" alt="Match Flowers" loading="lazy">
+                <div class="work-caption">Match Flowers</div>
+                <div class="layer">
+                    <h3>Match Flowers</h3>
+                    <p>A Match-3 game with beautiful graphics and smooth gameplay.</p>
+                    <span class="open"><i class="fa fa-external-link"></i></span>
+                </div>
+            </a>
+        </div>
+
+        <ul class="tech-tags">
+            <li>Unity (C#)</li><li>Unreal Engine</li><li>Photon PUN</li><li>URP</li><li>HDRP</li>
+            <li>ProBuilder</li><li>NavMeshSurface</li><li>DOTween</li><li>Playmaker</li>
+            <li>AdMob</li><li>Firebase Analytics</li>
+        </ul>
+    </div>
+</section>
+
+<section id="python">
+    <div class="container">
+        <h2 class="section-title">Python &amp; AI</h2>
+        <p class="section-intro">My current direction — an AI degree at the Technical University of Košice, a completed Python course, and small tools built to learn by shipping.</p>
+
+        <div class="services-list">
+            <div class="service-item">
+                <i class="fas fa-brain"></i>
+                <h3>AI Studies</h3>
+                <p>Studying Artificial Intelligence at TUKE since 2024 — neural network and machine learning fundamentals: architectures, loss functions, optimizers and evaluation.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-code"></i>
+                <h3>Python Apps</h3>
+                <p>Telegram bot, web parser and text analyzer, built with Requests, BeautifulSoup and NumPy.</p>
+                <a href="https://drive.google.com/drive/folders/1QPh7VJDoDGhIgEklT5v7joaJpI0CH82i?usp=drive_link">Learn More</a>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-futbol"></i>
+                <h3>AI in Games</h3>
+                <p>Clever Soccer uses trained neural network agents so that no two matches ever play the same way.</p>
+                <a href="https://kopynus.itch.io/clever-soccer">Play it</a>
+            </div>
+        </div>
+
+        <ul class="tech-tags">
+            <li>Python</li><li>NumPy</li><li>TensorFlow</li><li>BeautifulSoup</li>
+            <li>Requests</li><li>Neural networks</li><li>OOP</li><li>SOLID</li>
+        </ul>
+    </div>
+</section>
+
+<section id="models">
+    <div class="container">
+        <h2 class="section-title">3D Models</h2>
+        <p class="section-intro">Game-ready assets modelled for my own projects. Drag any model to rotate it.</p>
+
+        <div class="models-list">
+            <div class="model-card">
+                <model-viewer src="models/cannon.gltf" camera-controls touch-action="pan-y" alt="Cannon"></model-viewer>
+                <h3>Cannon</h3><p>From Boat Defense</p>
+                <a href="https://skfb.ly/oRAT6">View on Sketchfab</a>
+            </div>
+            <div class="model-card">
+                <model-viewer src="models/catapult.gltf" camera-controls touch-action="pan-y" alt="Catapult"></model-viewer>
+                <h3>Catapult</h3><p>From Boat Defense</p>
+                <a href="https://skfb.ly/oRAVZ">View on Sketchfab</a>
+            </div>
+            <div class="model-card">
+                <model-viewer src="models/turret.gltf" camera-controls touch-action="pan-y" alt="Turret"></model-viewer>
+                <h3>Turret</h3><p>From Boat Defense</p>
+                <a href="https://skfb.ly/oRATr">View on Sketchfab</a>
+            </div>
+            <div class="model-card">
+                <model-viewer src="models/panel.gltf" camera-controls touch-action="pan-y" alt="Sun Panel"></model-viewer>
+                <h3>Sun Panel</h3><p>From Boat Defense</p>
+                <a href="https://skfb.ly/oRAVT">View on Sketchfab</a>
+            </div>
+            <div class="model-card">
+                <model-viewer src="models/monster.gltf" camera-controls touch-action="pan-y" alt="Monster"></model-viewer>
+                <h3>Monster</h3><p>From 61 Level</p>
+                <a href="https://skfb.ly/oRBLY">View on Sketchfab</a>
+            </div>
+            <div class="model-card">
+                <model-viewer src="models/glock.gltf" camera-controls touch-action="pan-y" alt="Glock-17"></model-viewer>
+                <h3>Glock-17</h3><p>Weapon prop</p>
+                <a href="https://skfb.ly/oRERJ">View on Sketchfab</a>
+            </div>
+        </div>
+
+        <ul class="tech-tags">
+            <li>Blender</li><li>3ds Max</li><li>MagicaVoxel</li>
+        </ul>
+    </div>
+</section>
+
+<section id="certificates">
+    <div class="container">
+        <h2 class="section-title">Certificates</h2>
+        <p class="section-intro">Courses and events, with the documents attached.</p>
+
+        <ul class="certs-list">
+            <li><a href="docs/MAKSYMSHAKHOVPYTHON.pdf">
+                <i class="fas fa-file-pdf"></i><strong>Python Course</strong><span>VITA.SK, 2025</span>
+            </a></li>
+            <li><a href="docs/EF%20SET%20Certificate.pdf">
+                <i class="fas fa-file-pdf"></i><strong>EF SET English</strong><span>2026</span>
+            </a></li>
+            <li><a href="docs/%D0%A8%D0%B0%D1%85%D0%BE%D0%B2%20%D0%9C%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%20(GlobalGameJam2023).pdf">
+                <i class="fas fa-file-pdf"></i><strong>Global Game Jam</strong><span>2023</span>
+            </a></li>
+            <li><a href="docs/%D0%A8%D0%B0%D1%85%D0%BE%D0%B2%20%D0%9C%D0%B0%D0%BA%D1%81%D0%B8%D0%BC(IT%20Step).pdf">
+                <i class="fas fa-file-pdf"></i><strong>ITSTEP Academy</strong><span>2019 – 2022</span>
+            </a></li>
+        </ul>
+
+        <h2 class="section-title" style="margin-top:80px">Languages</h2>
+        <ul class="langs-list">
+            <li><strong>Ukrainian</strong><em>Native</em>
+                <div class="lang-meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div></li>
+            <li><strong>Russian</strong><em>Native</em>
+                <div class="lang-meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div></li>
+            <li><strong>English</strong><em>C1</em>
+                <div class="lang-meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div></li>
+            <li><strong>Slovak</strong><em>B2</em>
+                <div class="lang-meter"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div></li>
+            <li><strong>German</strong><em>A2</em>
+                <div class="lang-meter"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div></li>
+        </ul>
+    </div>
+</section>
+
+<footer id="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Me</h3>
+                <p><a class="communication" href="mailto:mnr489009@gmail.com">mnr489009@gmail.com</a></p>
+                <p>Flutter / Unity / AI Developer</p>
+                <p>Košice, Slovakia — open to remote</p>
+                <div class="social-links">
+                    <a href="https://github.com/MaksymShakhov" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/maksym-shakhov-661575267/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.upwork.com/freelancers/~01d9c9bc00e342e473/" aria-label="Upwork"><i class="fa-brands fa-upwork"></i></a>
+                    <a href="https://www.youtube.com/@kopynus/videos" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/maksym_shakhov/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#flutter">Flutter &amp; Mobile</a></li>
+                    <li><a href="#unity">Unity &amp; Games</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>What I Do</h3>
+                <ul class="footer-links">
+                    <li><a href="#flutter">Flutter Development</a></li>
+                    <li><a href="#unity">Unity Development</a></li>
+                    <li><a href="#python">Python &amp; AI</a></li>
+                    <li><a href="#models">3D Modeling</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2026 | Designed by <span class="designer">Kopynus</span></p>
         </div>
     </div>
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="section-title">Portfolio</h1>
-            <div class="portfolio-tabs">
-                <div class="portfolio-tab-titles">
-                    <p class="portfolio-tab-link active-portfolio-tab" onclick="openPortfolioTab('games')">Games</p>
-                    <p class="portfolio-tab-link" onclick="openPortfolioTab('models')">3D Models</p>
-                    <p class="portfolio-tab-link" onclick="openPortfolioTab('certificates')">Certificates</p>
-                </div>
-                <div class="portfolio-tab-content active-portfolio-tab" id="games">
-                    <h2 class="kindtitle">Games</h2>
-                    <div class="work-list1">
-                        <div class="work">
-                            <img src="images/crashOut.jpg">
-                            <div class="layer">
-                                <h3>Crash Out</h3>
-                                <p>DESTROY THE ENTIRE MAP ON YOUR CAR! In Crash Out you can earn points in different game modes, as well as unlock new cars and maps.</p>
-                                <a href="https://play.google.com/store/apps/details?id=com.Kopynus.CrashOut"><i class="fa fa-external-link" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                        <div class="work">
-                            <img src="images/Just Fun.jpg">
-                            <div class="layer">
-                                <h3>Just Fun</h3>
-                                <p>Just Fun is a multiplayer runner with colored men that you can play with friends on computers.The main goal of the game is to reach the finish line before others, but its not so easy - there are many obstacles in the game.</p>
-                                <a href="https://kopynus.itch.io/just-fun"><i class="fa fa-external-link" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                        <div class="work">
-                            <img src="images/BoatDefense.png">
-                            <div class="layer">
-                                <h3>Boat Defense</h3>
-                                <p>PROTECT YOUR BOAT AT ALL COSTS! In this game you need to defend yourself from enemies using weapons: guns, catapults, turrets, and so on in order to save the man on the boat. There's no need to wait, start building!</p>
-                                <a href="https://kopynus.itch.io/boat-defense"><i class="fa fa-external-link" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                        <div class="work">
-                            <img src="images/Soccer.jpeg">
-                            <div class="layer">
-                                <h3>Clever Soccer</h3>
-                                <p>Play in soccer with clever AI.Clever Soccer has new neural networks to give players as most unique games as possible</p>
-                                <a href="https://kopynus.itch.io/clever-soccer"><i class="fa fa-external-link" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                        <div class="work">
-                            <img src="images/RunningGuys.jpg">
-                            <div class="layer">
-                                <h3>Going Guys</h3>
-                                <p>Collect as many dollars as possible! In this game you need to run to absorb dollars, increasing in size in order to hit the button at the finish line and earn even more dollars!</p>
-                                <a href="https://drive.google.com/file/d/18A89XV-YOmVZ0Bn_dSBgBoWiV1L_ImqW/view?usp=drive_link"><i class="fa fa-external-link" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                        <div class="work">
-                            <img src="images/EarthRoots.jpeg">
-                            <div class="layer">
-                                <h3>Earth Roots</h3>
-                                <p>This is a 1-person adventure game that will definitely keep you entertained! Find out the secret of your family's roots, what awaits in the depths of the earth? Explore many locations, playable characters and explore all the possibilities of the game!</p>
-                                <a href="https://kopynus.itch.io/earthroots"><i class="fa fa-external-link" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                        <div class="work">
-                            <img src="images/HaHa.jpg">
-                            <div class="layer">
-                                <h3>Ha-Ha Show</h3>
-                                <p>Ha-Ha show is a game where you have to compete with another player, standing on colors and surviving as long as possible. Your main task is to bring as much laughter as possible to the audience!</p>
-                                <a href="https://kopynus.itch.io/ha-ha-show"><i class="fa fa-external-link" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                        <div class="work">
-                            <img src="images/Logo61.png">
-                            <div class="layer">
-                                <h3>61 Level</h3>
-                                <p>61 Level is the horror about one level of backrooms. It's the mysterious train. Solve all tasks as fast as you can!</p>
-                                <a href="https://drive.google.com/file/d/19KyhHSD0FIx5zkhbstEwCQwlMhZHHSzM/view?usp=sharing"><i class="fa fa-external-link" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                        <div class="work">
-                            <img src="images/Match Flowers.png">
-                            <div class="layer">
-                                <h3>Match Flowers</h3>
-                                <p>A new interesting Match 3 type game with beautiful graphics and smooth gameplay</p>
-                                <a href="https://drive.google.com/file/d/1ualhqO59JvzRi0OEeqfYxkb1iIFCqyA3/view?usp=sharing"><i class="fa fa-external-link" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-tab-content" id="models">
-                    <h2 class="kindtitle">3D Models</h2>
-                    <div class="work-list2">
-                        <div class="work">
-                            <div class="workModel">
-                                <model-viewer class="model3D" src="models/cannon.gltf" camera-controls></model-viewer>
-                                <h3>Cannon</h3>
-                                <p>Cannon model from Boat Defense</p>
-                                <a href="https://skfb.ly/oRAT6"><i class="fa fa-external-link" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                        <div class="work">
-                            <div class="workModel">
-                                <model-viewer class="model3D" src="models/catapult.gltf" camera-controls></model-viewer>
-                                <h3>Catapult</h3>
-                                <p>Catapult model from Boat Defense</p>
-                                <a href="https://skfb.ly/oRAVZ"><i class="fa fa-external-link" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                        <div class="work">
-                            <div class="workModel">
-                                <model-viewer class="model3D" src="models/turret.gltf" camera-controls></model-viewer>
-                                <h3>Turret</h3>
-                                <p>Turret model from Boat Defense</p>
-                                <a href="https://skfb.ly/oRATr"><i class="fa fa-external-link" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                        <div class="work">
-                            <div class="workModel">
-                                <model-viewer class="model3D" src="models/panel.gltf" camera-controls></model-viewer>
-                                <h3>Sun Panel</h3>
-                                <p>Sun Panel model from Boat Defense</p>
-                                <a href="https://skfb.ly/oRAVT"><i class="fa fa-external-link" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                        <div class="work">
-                            <div class="workModel">
-                                <model-viewer class="model3D" src="models/monster.gltf" camera-controls></model-viewer>
-                                <h3>Monster</h3>
-                                <p>Monster model from 61 Level</p>
-                                <a href="https://skfb.ly/oRBLY"><i class="fa fa-external-link" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                        <div class="work">
-                            <div class="workModel">
-                                <model-viewer class="model3D" src="models/glock.gltf" camera-controls></model-viewer>
-                                <h3>Glock-17</h3>
-                                <p>Glock model</p>
-                                <a href="https://skfb.ly/oRERJ"><i class="fa fa-external-link" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-tab-content" id="certificates">
-                    <h2 class="kindtitle">Certificates</h2>
-                    <div class="work-list3">
-                        <div class="work">
-                            <center><iframe src="docs/MAKSYMSHAKHOVPYTHON.pdf" frameborder="0"></iframe></center>
-                            <h3>Python Course 2025</h3>
-                        </div>
-                        <div class="work">
-                            <center><iframe src="docs/Шахов Максим (GlobalGameJam2023).pdf" frameborder="0"></iframe></center>
-                            <h3>Global Game Jam 2023</h3>
-                        </div>
-                        <div class="work">
-                            <center><iframe src="docs/Шахов Максим(IT Step).pdf" frameborder="0"></iframe></center>
-                            <h3>IT Step 2019-2022</h3>
-                        </div>
-                        <div class="work">
-                            <center><iframe src="docs/Шахов Максим(Minor Academy of Sciences).pdf" frameborder="0"></iframe></center>
-                            <h3>Minor Academy Of Science 2020-2021</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer id="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Contact Me</h3>
-                    <p class="communication">kos782226@gmail.com</p>
-                    <p>Game / App / AI Developer</p>
-                    <div class="social-links">
-                        <a href="https://github.com/MaksymShakhov"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/maksym-shakhov-661575267/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://www.upwork.com/freelancers/~01d9c9bc00e342e473/"><i class="fa-brands fa-upwork"></i></a>
-                        <a href="https://www.instagram.com/maksym_shakhov/"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="#header">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Skills</h3>
-                    <ul class="footer-links">
-                        <li><a href="#unity-service">Unity Development</a></li>
-                        <li><a href="#unity-service">Unreal Engine</a></li>
-                        <li><a href="#python-service">Python Programming</a></li>
-                        <li><a href="#models-service">3D Modeling</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>Copyright &copy; 2026 | Designed by <span class="designer">Kopynus</span></p>
-            </div>
-        </div>
-    </footer>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-    <df-messenger chat-icon="https:&#x2F;&#x2F;i.ibb.co&#x2F;1fzrHTTP&#x2F;Vector-1.png" intent="WELCOME" chat-title="PortfolioFAQ" agent-id="b756be44-a971-4c19-9d94-8a5da8225ba6" language-code="en"></df-messenger>
-    <script src="js/script.js"></script>
+</footer>
+
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
